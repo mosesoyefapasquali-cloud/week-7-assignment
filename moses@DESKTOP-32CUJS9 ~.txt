@@ -1,0 +1,655 @@
+Installing, this may take a few minutes...
+Please create a default UNIX user account. The username does not need to match your Windows username.
+For more information visit: https://aka.ms/wslusers
+Enter new UNIX username: moses
+New password:
+Retype new password:
+Sorry, passwords do not match.
+passwd: Authentication token manipulation error
+passwd: password unchanged
+warn: `/bin/passwd moses' failed with status 10. Continuing.
+warn: wrong password given or password retyped incorrectly
+Try again? [y/N] y
+New password:
+Retype new password:
+passwd: password updated successfully
+usermod: no changes
+Installation successful!
+Provisioning the new WSL instance Ubuntu
+This might take a while...
+Help improve Ubuntu!
+
+Help us improve Ubuntu features and compatibility by sharing system reports with Canonical.
+Reports are sent anonymously and do not contain any personal data.
+For legal details, please visit: https://ubuntu.com/legal/systems-information-notice
+
+We will save your answer to Windows and will only ask you once.
+
+Would you like to opt-in to platform metrics collection (Y/n)? To see an example of the data collected, enter 'e'.
+[Y/n/e]: yInstalling, this may take a few minutes...
+Please create a default UNIX user account. The username does not need to match your Windows username.
+For more information visit: https://aka.ms/wslusers
+Enter new UNIX username: moses
+New password:
+Retype new password:
+Sorry, passwords do not match.
+passwd: Authentication token manipulation error
+passwd: password unchanged
+warn: `/bin/passwd moses' failed with status 10. Continuing.
+warn: wrong password given or password retyped incorrectly
+Try again? [y/N] y
+New password:
+Retype new password:
+passwd: password updated successfully
+usermod: no changes
+Invalid input (Y/n/e).
+Would you like to opt-in to platform metrics collection (Y/n)? To see an example of the data collected, enter 'e'.
+[Y/n/e]: n
+Welcome to Ubuntu 26.04.1 LTS (GNU/Linux 6.18.40.1-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://docs.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Thu Oct  8 15:36:47 EAT 2026
+
+  System load:  0.28                Processes:             43
+  Usage of /:   0.1% of 1006.85GB   Users logged in:       0
+  Memory usage: 11%                 IPv4 address for eth0: 172.28.146.143
+  Swap usage:   0%
+
+
+This message is shown once a day. To disable it please create the
+/home/moses/.hushlogin file.
+moses@DESKTOP-32CUJS9:~$ psql --version
+Command 'psql' not found, but can be installed with:
+sudo apt install postgresql-client-common
+moses@DESKTOP-32CUJS9:~$ sudo apt update
+[sudo: authenticate] Password:
+
+moses@DESKTOP-32CUJS9:~$ sudo apt update
+[sudo: authenticate] Password:
+Hit:1 http://archive.ubuntu.com/ubuntu resolute InRelease
+Get:2 http://archive.ubuntu.com/ubuntu resolute-updates InRelease [137 kB]
+Get:3 http://archive.ubuntu.com/ubuntu resolute-backports InRelease [137 kB]
+Get:4 http://archive.ubuntu.com/ubuntu resolute/universe amd64 Packages [16.0 MB]
+Get:5 http://archive.ubuntu.com/ubuntu resolute/universe Translation-en [6329 kB]
+Get:6 http://archive.ubuntu.com/ubuntu resolute/universe amd64 Components [4556 kB]
+Get:7 http://security.ubuntu.com/ubuntu resolute-security InRelease [137 kB]
+Get:8 http://security.ubuntu.com/ubuntu resolute-security/main amd64 Packages [598 kB]
+Get:9 http://security.ubuntu.com/ubuntu resolute-security/main Translation-en [138 kB]
+Get:10 http://security.ubuntu.com/ubuntu resolute-security/main amd64 Components [46.7 kB]
+Get:11 http://security.ubuntu.com/ubuntu resolute-security/universe amd64 Packages [200 kB]
+Get:12 http://security.ubuntu.com/ubuntu resolute-security/universe Translation-en [64.9 kB]
+Get:13 http://security.ubuntu.com/ubuntu resolute-security/universe amd64 Components [55.6 kB]
+Get:14 http://security.ubuntu.com/ubuntu resolute-security/universe amd64 c-n-f Metadata [3552 B]
+Get:15 http://security.ubuntu.com/ubuntu resolute-security/restricted amd64 Packages [474 kB]
+Get:16 http://security.ubuntu.com/ubuntu resolute-security/restricted Translation-en [96.3 kB]
+Get:17 http://security.ubuntu.com/ubuntu resolute-security/multiverse amd64 Packages [10.8 kB]
+Get:18 http://security.ubuntu.com/ubuntu resolute-security/multiverse Translation-en [2844 B]
+Get:19 http://security.ubuntu.com/ubuntu resolute-security/multiverse amd64 Components [212 B]
+Get:20 http://security.ubuntu.com/ubuntu resolute-security/multiverse amd64 c-n-f Metadata [120 B]
+Get:21 http://archive.ubuntu.com/ubuntu resolute/universe amd64 c-n-f Metadata [313 kB]
+Get:22 http://archive.ubuntu.com/ubuntu resolute/multiverse amd64 Packages [290 kB]
+Get:23 http://archive.ubuntu.com/ubuntu resolute/multiverse Translation-en [127 kB]
+Get:24 http://archive.ubuntu.com/ubuntu resolute/multiverse amd64 Components [50.0 kB]
+Get:25 http://archive.ubuntu.com/ubuntu resolute/multiverse amd64 c-n-f Metadata [8276 B]
+Get:26 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 Packages [734 kB]
+Get:27 http://archive.ubuntu.com/ubuntu resolute-updates/main Translation-en [172 kB]
+Get:28 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 Components [110 kB]
+Get:29 http://archive.ubuntu.com/ubuntu resolute-updates/universe amd64 Packages [323 kB]
+Get:30 http://archive.ubuntu.com/ubuntu resolute-updates/universe Translation-en [105 kB]
+Get:31 http://archive.ubuntu.com/ubuntu resolute-updates/universe amd64 Components [201 kB]
+Get:32 http://archive.ubuntu.com/ubuntu resolute-updates/universe amd64 c-n-f Metadata [4704 B]
+Get:33 http://archive.ubuntu.com/ubuntu resolute-updates/restricted amd64 Packages [508 kB]
+Get:34 http://archive.ubuntu.com/ubuntu resolute-updates/restricted Translation-en [101 kB]
+Get:35 http://archive.ubuntu.com/ubuntu resolute-updates/multiverse amd64 Packages [21.0 kB]
+Get:36 http://archive.ubuntu.com/ubuntu resolute-updates/multiverse Translation-en [4168 B]
+Get:37 http://archive.ubuntu.com/ubuntu resolute-updates/multiverse amd64 Components [216 B]
+Get:38 http://archive.ubuntu.com/ubuntu resolute-updates/multiverse amd64 c-n-f Metadata [256 B]
+Get:39 http://archive.ubuntu.com/ubuntu resolute-backports/main amd64 Components [212 B]
+Get:40 http://archive.ubuntu.com/ubuntu resolute-backports/main amd64 c-n-f Metadata [112 B]
+Get:41 http://archive.ubuntu.com/ubuntu resolute-backports/universe amd64 Packages [3136 B]
+Get:42 http://archive.ubuntu.com/ubuntu resolute-backports/universe Translation-en [7988 B]
+Get:43 http://archive.ubuntu.com/ubuntu resolute-backports/universe amd64 Components [1060 B]
+Get:44 http://archive.ubuntu.com/ubuntu resolute-backports/universe amd64 c-n-f Metadata [116 B]
+Get:45 http://archive.ubuntu.com/ubuntu resolute-backports/restricted amd64 Components [216 B]
+Get:46 http://archive.ubuntu.com/ubuntu resolute-backports/restricted amd64 c-n-f Metadata [120 B]
+Get:47 http://archive.ubuntu.com/ubuntu resolute-backports/multiverse amd64 Components [216 B]
+Get:48 http://archive.ubuntu.com/ubuntu resolute-backports/multiverse amd64 c-n-f Metadata [120 B]
+Fetched 32.0 MB in 50s (644 kB/s)
+103 packages can be upgraded. Run 'apt list --upgradable' to see them.
+moses@DESKTOP-32CUJS9:~$ sudo apt install postgresql postgresql-contrib
+Note, selecting 'postgresql' instead of 'postgresql-contrib'
+Installing:
+  postgresql
+
+Installing dependencies:
+  libcommon-sense-perl  libjson-xs-perl  libtypes-serialiser-perl  postgresql-18         postgresql-client-common  sysstat
+  libicu78              libnuma1         liburing2                 postgresql-18-jit     postgresql-common
+  libjson-perl          libpq5           libxslt1.1                postgresql-client-18  ssl-cert
+
+Suggested packages:
+  libpq-oauth  postgresql-doc  postgresql-doc-18  isag
+
+Summary:
+  Upgrading: 0, Installing: 17, Removing: 0, Not Upgrading: 103
+  Download size: 30.5 MB
+  Space needed: 94.1 MB / 1024 GB available
+
+Continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu resolute/main amd64 libjson-perl all 4.10000-1 [81.9 kB]
+Get:2 http://archive.ubuntu.com/ubuntu resolute/main amd64 postgresql-client-common all 290ubuntu1 [49.4 kB]
+Get:3 http://archive.ubuntu.com/ubuntu resolute/main amd64 ssl-cert all 1.1.3ubuntu2 [18.8 kB]
+Get:4 http://archive.ubuntu.com/ubuntu resolute/main amd64 postgresql-common all 290ubuntu1 [101 kB]
+Get:5 http://archive.ubuntu.com/ubuntu resolute/main amd64 libnuma1 amd64 2.0.19-1build1 [23.7 kB]
+Get:6 http://archive.ubuntu.com/ubuntu resolute/main amd64 sysstat amd64 12.7.7-0ubuntu2 [517 kB]
+Get:7 http://archive.ubuntu.com/ubuntu resolute/main amd64 libcommon-sense-perl amd64 3.75-3build5 [20.5 kB]
+Get:8 http://archive.ubuntu.com/ubuntu resolute/main amd64 libicu78 amd64 78.2-2ubuntu1 [11.5 MB]
+Get:9 http://archive.ubuntu.com/ubuntu resolute/main amd64 libtypes-serialiser-perl all 1.01-1 [11.6 kB]
+Get:10 http://archive.ubuntu.com/ubuntu resolute/main amd64 libjson-xs-perl amd64 4.040-1 [84.4 kB]
+Get:11 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 libpq5 amd64 18.6-0ubuntu0.26.04.1 [163 kB]
+Get:12 http://archive.ubuntu.com/ubuntu resolute/main amd64 liburing2 amd64 2.14-1 [25.4 kB]
+Get:13 http://archive.ubuntu.com/ubuntu resolute/main amd64 libxslt1.1 amd64 1.1.45-0.1 [165 kB]
+Get:14 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 postgresql-client-18 amd64 18.6-0ubuntu0.26.04.1 [1401 kB]
+Get:15 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 postgresql-18 amd64 18.6-0ubuntu0.26.04.1 [6002 kB]
+Get:16 http://archive.ubuntu.com/ubuntu resolute/main amd64 postgresql all 18+290ubuntu1 [18.6 kB]
+Get:17 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 postgresql-18-jit amd64 18.6-0ubuntu0.26.04.1 [10.4 MB]
+Fetched 30.5 MB in 13s (2265 kB/s)
+Preconfiguring packages ...
+/var/cache/debconf/tmp.ci/postgresql.config.NUuRUp: 12: pg_lsclusters: not found
+Selecting previously unselected package libjson-perl.
+(Reading database ... 35908 files and directories currently installed.)
+Preparing to unpack .../00-libjson-perl_4.10000-1_all.deb ...
+Unpacking libjson-perl (4.10000-1) ...
+Selecting previously unselected package postgresql-client-common.
+Preparing to unpack .../01-postgresql-client-common_290ubuntu1_all.deb ...
+Unpacking postgresql-client-common (290ubuntu1) ...
+Selecting previously unselected package ssl-cert.
+Preparing to unpack .../02-ssl-cert_1.1.3ubuntu2_all.deb ...
+Unpacking ssl-cert (1.1.3ubuntu2) ...
+Selecting previously unselected package postgresql-common.
+Preparing to unpack .../03-postgresql-common_290ubuntu1_all.deb ...
+Adding 'diversion of /usr/bin/pg_config to /usr/bin/pg_config.libpq-dev by postgresql-common'
+Unpacking postgresql-common (290ubuntu1) ...
+Selecting previously unselected package libnuma1:amd64.
+Preparing to unpack .../04-libnuma1_2.0.19-1build1_amd64.deb ...
+Unpacking libnuma1:amd64 (2.0.19-1build1) ...
+Selecting previously unselected package sysstat.
+Preparing to unpack .../05-sysstat_12.7.7-0ubuntu2_amd64.deb ...
+Unpacking sysstat (12.7.7-0ubuntu2) ...
+Selecting previously unselected package libcommon-sense-perl:amd64.
+Preparing to unpack .../06-libcommon-sense-perl_3.75-3build5_amd64.deb ...
+Unpacking libcommon-sense-perl:amd64 (3.75-3build5) ...
+Selecting previously unselected package libicu78:amd64.
+Preparing to unpack .../07-libicu78_78.2-2ubuntu1_amd64.deb ...
+Unpacking libicu78:amd64 (78.2-2ubuntu1) ...
+Selecting previously unselected package libtypes-serialiser-perl.
+Preparing to unpack .../08-libtypes-serialiser-perl_1.01-1_all.deb ...
+Unpacking libtypes-serialiser-perl (1.01-1) ...
+Selecting previously unselected package libjson-xs-perl.
+Preparing to unpack .../09-libjson-xs-perl_4.040-1_amd64.deb ...
+Unpacking libjson-xs-perl (4.040-1) ...
+Selecting previously unselected package libpq5:amd64.
+Preparing to unpack .../10-libpq5_18.6-0ubuntu0.26.04.1_amd64.deb ...
+Unpacking libpq5:amd64 (18.6-0ubuntu0.26.04.1) ...
+Selecting previously unselected package liburing2:amd64.
+Preparing to unpack .../11-liburing2_2.14-1_amd64.deb ...
+Unpacking liburing2:amd64 (2.14-1) ...
+Selecting previously unselected package libxslt1.1:amd64.
+Preparing to unpack .../12-libxslt1.1_1.1.45-0.1_amd64.deb ...
+Unpacking libxslt1.1:amd64 (1.1.45-0.1) ...
+Selecting previously unselected package postgresql-client-18.
+Preparing to unpack .../13-postgresql-client-18_18.6-0ubuntu0.26.04.1_amd64.deb ...
+Unpacking postgresql-client-18 (18.6-0ubuntu0.26.04.1) ...
+Selecting previously unselected package postgresql-18.
+Preparing to unpack .../14-postgresql-18_18.6-0ubuntu0.26.04.1_amd64.deb ...
+Unpacking postgresql-18 (18.6-0ubuntu0.26.04.1) ...
+Selecting previously unselected package postgresql.
+Preparing to unpack .../15-postgresql_18+290ubuntu1_all.deb ...
+Unpacking postgresql (18+290ubuntu1) ...
+Selecting previously unselected package postgresql-18-jit.
+Preparing to unpack .../16-postgresql-18-jit_18.6-0ubuntu0.26.04.1_amd64.deb ...
+Unpacking postgresql-18-jit (18.6-0ubuntu0.26.04.1) ...
+Setting up postgresql-client-common (290ubuntu1) ...
+Setting up libpq5:amd64 (18.6-0ubuntu0.26.04.1) ...
+Setting up libcommon-sense-perl:amd64 (3.75-3build5) ...
+Setting up libicu78:amd64 (78.2-2ubuntu1) ...
+Setting up ssl-cert (1.1.3ubuntu2) ...
+Created symlink '/etc/systemd/system/multi-user.target.wants/ssl-cert.service' → '/usr/lib/systemd/system/ssl-cert.service'.
+Setting up libnuma1:amd64 (2.0.19-1build1) ...
+Setting up libtypes-serialiser-perl (1.01-1) ...
+Setting up libjson-perl (4.10000-1) ...
+Setting up libxslt1.1:amd64 (1.1.45-0.1) ...
+Setting up liburing2:amd64 (2.14-1) ...
+Setting up sysstat (12.7.7-0ubuntu2) ...
+Creating config file /etc/default/sysstat with new version
+update-alternatives: using /usr/bin/sar.sysstat to provide /usr/bin/sar (sar) in auto mode
+Created symlink '/etc/systemd/system/sysstat.service.wants/sysstat-collect.timer' → '/usr/lib/systemd/system/sysstat-collect.timer'.
+Created symlink '/etc/systemd/system/sysstat.service.wants/sysstat-rotate.timer' → '/usr/lib/systemd/system/sysstat-rotate.timer'.
+Created symlink '/etc/systemd/system/sysstat.service.wants/sysstat-summary.timer' → '/usr/lib/systemd/system/sysstat-summary.timer'.
+Created symlink '/etc/systemd/system/multi-user.target.wants/sysstat.service' → '/usr/lib/systemd/system/sysstat.service'.
+Setting up libjson-xs-perl (4.040-1) ...
+Setting up postgresql-client-18 (18.6-0ubuntu0.26.04.1) ...
+update-alternatives: using /usr/share/postgresql/18/man/man1/psql.1.gz to provide /usr/share/man/man1/psql.1.gz (psql.1.gz) in auto mode
+Setting up postgresql-common (290ubuntu1) ...
+Creating config file /etc/postgresql-common/createcluster.conf with new version
+Building PostgreSQL dictionaries from installed myspell/hunspell packages...
+Removing obsolete dictionary files:
+Created symlink '/etc/systemd/system/multi-user.target.wants/postgresql.service' → '/usr/lib/systemd/system/postgresql.service'.
+Setting up postgresql-18 (18.6-0ubuntu0.26.04.1) ...
+Creating new PostgreSQL cluster 18/main ...
+/usr/lib/postgresql/18/bin/initdb -D /var/lib/postgresql/18/main --auth-local peer --auth-host scram-sha-256 --no-instructions
+The files belonging to this database system will be owned by user "postgres".
+This user must also own the server process.
+
+The database cluster will be initialized with locale "C.UTF-8".
+The default database encoding has accordingly been set to "UTF8".
+The default text search configuration will be set to "english".
+
+Data page checksums are enabled.
+
+fixing permissions on existing directory /var/lib/postgresql/18/main ... ok
+creating subdirectories ... ok
+selecting dynamic shared memory implementation ... posix
+selecting default "max_connections" ... 100
+selecting default "shared_buffers" ... 128MB
+selecting default time zone ... Africa/Nairobi
+creating configuration files ... ok
+running bootstrap script ... ok
+performing post-bootstrap initialization ... ok
+syncing data to disk ... ok
+Setting up postgresql-18-jit (18.6-0ubuntu0.26.04.1) ...
+Setting up postgresql (18+290ubuntu1) ...
+Processing triggers for man-db (2.13.1-1build1) ...
+Processing triggers for libc-bin (2.43-2ubuntu2.3) ...
+moses@DESKTOP-32CUJS9:~$ psql --version
+psql (PostgreSQL) 18.6 (Ubuntu 18.6-0ubuntu0.26.04.1)
+moses@DESKTOP-32CUJS9:~$ pg_lsclusters
+Ver Cluster Port Status Owner    Data directory              Log file
+18  main    5432 online postgres /var/lib/postgresql/18/main /var/log/postgresql/postgresql-18-main.log
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres psql
+psql (18.6 (Ubuntu 18.6-0ubuntu0.26.04.1))
+Type "help" for help.
+
+postgres=# CREATE DATABASE bootcamp;
+CREATE DATABASE
+postgres=# \c bootcamp
+You are now connected to database "bootcamp" as user "postgres".
+bootcamp=# \dt
+Did not find any tables.
+bootcamp=# CREATE TABLE students (
+    id SERIAL PRIMARY KEY,
+    name TEXT NOT NULL,
+    level TEXT
+);
+CREATE TABLE
+bootcamp=# INSERT INTO students (name, level)
+VALUES ('Alice', 'beginner');
+INSERT 0 1
+bootcamp=# SELECT * FROM students;
+ id | name  |  level
+----+-------+----------
+  1 | Alice | beginner
+(1 row)
+
+bootcamp=# \q
+moses@DESKTOP-32CUJS9:~$ mkdir -p ~/backups
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres pg_dump -Fc -f /home/moses/backups/bootcamp.dump bootcamp
+pg_dump: error: could not open output file "/home/moses/backups/bootcamp.dump": Permission denied
+moses@DESKTOP-32CUJS9:~$ sudo chown postgres:postgres /home/moses/backups
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres pg_dump -Fc -f /home/moses/backups/bootcamp.dump bootcamp
+pg_dump: error: could not open output file "/home/moses/backups/bootcamp.dump": Permission denied
+moses@DESKTOP-32CUJS9:~$ sudo mkdir -p /var/backups/postgresql
+moses@DESKTOP-32CUJS9:~$ sudo chown postgres:postgres /var/backups/postgresql
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres pg_dump -Fc -f /var/backups/postgresql/bootcamp.dump bootcamp
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres pg_restore --list /var/backups/postgresql/bootcamp.dump | head
+;
+; Archive created at 2026-10-08 15:59:07 EAT
+;     dbname: bootcamp
+;     TOC Entries: 11
+;     Compression: gzip
+;     Dump Version: 1.16-0
+;     Format: CUSTOM
+;     Integer: 4 bytes
+;     Offset: 8 bytes
+;     Dumped from database version: 18.6 (Ubuntu 18.6-0ubuntu0.26.04.1)
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres createdb bootcamp_check
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres createdb bootcamp_checksudo -u postgres pg_restore -d bootcamp_check /var/backups/postgresql/bootcamp.dump
+/usr/lib/postgresql/18/bin/createdb: invalid option -- 'u'
+createdb: hint: Try "createdb --help" for more information.
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres pg_restore -d bootcamp_check /var/backups/postgresql/bootcamp.dump
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres psql -d bootcamp_check -c "SELECT * FROM students;"
+ id | name  |  level
+----+-------+----------
+  1 | Alice | beginner
+(1 row)
+
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres psql -c "SHOW config_file;"
+               config_file
+-----------------------------------------
+ /etc/postgresql/18/main/postgresql.conf
+(1 row)
+
+moses@DESKTOP-32CUJS9:~$ sudo mkdir -p /var/backups/postgresql/wal
+moses@DESKTOP-32CUJS9:~$ sudo chown postgres:postgres /var/backups/postgresql/wal
+moses@DESKTOP-32CUJS9:~$ sudo nano /etc/postgresql/18/main/postgresql.conf
+
+moses@DESKTOP-32CUJS9:~$ sudo systemctl restart postgresql
+[sudo: authenticate] Password:
+moses@DESKTOP-32CUJS9:~$
+moses@DESKTOP-32CUJS9:~$ Moses2026
+Moses2026: command not found
+moses@DESKTOP-32CUJS9:~$ pg_lsclusters
+Ver Cluster Port Status Owner    Data directory              Log file
+18  main    5432 online postgres /var/lib/postgresql/18/main /var/log/postgresql/postgresql-18-main.log
+moses@DESKTOP-32CUJS9:~$ pg_lsclusters
+Ver Cluster Port Status Owner    Data directory              Log file
+18  main    5432 online postgres /var/lib/postgresql/18/main /var/log/postgresql/postgresql-18-main.log
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres psql -c "SHOW wal_level; SHOW archive_mode; SHOW archive_command;"
+ wal_level
+-----------
+ replica
+(1 row)
+
+ archive_mode
+--------------
+ on
+(1 row)
+
+           archive_command
+--------------------------------------
+ cp %p /var/backups/postgresql/wal/%f
+(1 row)
+
+moses@DESKTOP-32CUJS9:~$ sudo mkdir -p /var/backups/postgresql/base
+moses@DESKTOP-32CUJS9:~$ sudo chown postgres:postgres /var/backups/postgresql/base
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres pg_basebackup -D /var/backups/postgresql/base -Fp -Xs -P
+39349/39349 kB (100%), 1/1 tablespace
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres psql -d bootcamp -c "SELECT * FROM students;"
+ id | name  |  level
+----+-------+----------
+  1 | Alice | beginner
+(1 row)
+
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres psql -d bootcamp -c "INSERT INTO students (name, level) VALUES ('Bob', 'intermediate');"
+INSERT 0 1
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres psql -d bootcamp -c "SELECT pg_switch_wal();"
+ pg_switch_wal
+---------------
+ 0/4000280
+(1 row)
+
+moses@DESKTOP-32CUJS9:~$ sudo ls -lh /var/backups/postgresql/wal/
+total 49M
+-rw------- 1 postgres postgres 16M Oct  8 16:55 000000010000000000000002
+-rw------- 1 postgres postgres 16M Oct  8 16:55 000000010000000000000003
+-rw------- 1 postgres postgres 338 Oct  8 16:55 000000010000000000000003.00000028.backup
+-rw------- 1 postgres postgres 16M Oct  8 16:56 000000010000000000000004
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres psql -d bootcamp -c "SELECT now();"
+              now
+-------------------------------
+ 2026-10-08 16:57:44.415072+03
+(1 row)
+
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres psql -d bootcamp -c "DELETE FROM students;"
+DELETE 2
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres psql -d bootcamp -c "SELECT * FROM students;"
+ id | name | level
+----+------+-------
+(0 rows)
+
+moses@DESKTOP-32CUJS9:~$ sudo rm -rf /var/lib/postgresql/18/recovery && sudo cp -a /var/backups/postgresql/base /var/lib/postgresql/18/recovery && sudo chown -R postgres:postgres /var/lib/postgresql/18/recovery
+moses@DESKTOP-32CUJS9:~$ sudo nano /var/lib/postgresql/18/recovery/postgresql.conf
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres touch /var/lib/postgresql/18/recovery/recovery.signal
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres pg_ctl -D /var/lib/postgresql/18/recovery -l /var/lib/postgresql/18/recovery.log start
+sudo: 'pg_ctl': command not found
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres /usr/lib/postgresql/18/bin/pg_ctl -D /var/lib/postgresql/18/recovery -l /var/lib/postgresql/18/recovery.log start
+waiting for server to start.... stopped waiting
+pg_ctl: could not start server
+Examine the log output.
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres /usr/lib/postgresql/18/bin/pg_ctl -D /var/lib/postgresql/18/recovery -l /var/lib/postgresql/18/recovery.log start
+waiting for server to start.... stopped waiting
+pg_ctl: could not start server
+Examine the log output.
+moses@DESKTOP-32CUJS9:~$ sudo cat /var/lib/postgresql/18/recovery.log
+2026-10-08 14:02:50.025 GMT [4271] FATAL:  data directory "/var/lib/postgresql/18/recovery" has invalid permissions
+2026-10-08 14:02:50.025 GMT [4271] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2026-10-08 14:02:58.503 GMT [4288] FATAL:  data directory "/var/lib/postgresql/18/recovery" has invalid permissions
+2026-10-08 14:02:58.503 GMT [4288] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+moses@DESKTOP-32CUJS9:~$ sudo chmod 700 /var/lib/postgresql/18/recovery
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres /usr/lib/postgresql/18/bin/pg_ctl -D /var/lib/postgresql/18/recovery -l /var/lib/postgresql/18/recovery.log start
+waiting for server to start.... stopped waiting
+pg_ctl: could not start server
+Examine the log output.
+moses@DESKTOP-32CUJS9:~$ sudo tail -20 /var/lib/postgresql/18/recovery.log
+2026-10-08 14:02:50.025 GMT [4271] FATAL:  data directory "/var/lib/postgresql/18/recovery" has invalid permissions
+2026-10-08 14:02:50.025 GMT [4271] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2026-10-08 14:02:58.503 GMT [4288] FATAL:  data directory "/var/lib/postgresql/18/recovery" has invalid permissions
+2026-10-08 14:02:58.503 GMT [4288] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2026-10-08 14:04:20.614 GMT [4335] LOG:  starting PostgreSQL 18.6 (Ubuntu 18.6-0ubuntu0.26.04.1) on x86_64-pc-linux-gnu, compiled bygcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0, 64-bit
+2026-10-08 14:04:20.617 GMT [4335] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-10-08 14:04:20.624 GMT [4335] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5433"
+2026-10-08 14:04:20.633 GMT [4335] LOG:  could not open file "/var/lib/postgresql/18/recovery/pg_hba.conf": No such file or directory
+2026-10-08 14:04:20.633 GMT [4335] FATAL:  could not load /var/lib/postgresql/18/recovery/pg_hba.conf
+2026-10-08 14:04:20.635 GMT [4335] LOG:  database system is shut down
+moses@DESKTOP-32CUJS9:~$ sudo cp /etc/postgresql/18/main/pg_hba.conf /var/lib/postgresql/18/recovery/pg_hba.conf
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres /usr/lib/postgresql/18/bin/pg_ctl -D /var/lib/postgresql/18/recovery -l /var/lib/postgresql/18/recovery.log start
+waiting for server to start.... stopped waiting
+pg_ctl: could not start server
+Examine the log output.
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres /usr/lib/postgresql/18/bin/pg_ctl -D /var/lib/postgresql/18/recovery -l /var/lib/postgresql/18/recovery.log start
+waiting for server to start.... stopped waiting
+pg_ctl: could not start server
+Examine the log output.
+moses@DESKTOP-32CUJS9:~$ sudo tail -10 /var/lib/postgresql/18/recovery.log
+2026-10-08 14:05:36.474 GMT [4385] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5433"
+2026-10-08 14:05:36.484 GMT [4385] LOG:  could not open file "/var/lib/postgresql/18/recovery/pg_hba.conf": Permission denied
+2026-10-08 14:05:36.484 GMT [4385] FATAL:  could not load /var/lib/postgresql/18/recovery/pg_hba.conf
+2026-10-08 14:05:36.487 GMT [4385] LOG:  database system is shut down
+2026-10-08 14:05:41.163 GMT [4401] LOG:  starting PostgreSQL 18.6 (Ubuntu 18.6-0ubuntu0.26.04.1) on x86_64-pc-linux-gnu, compiled bygcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0, 64-bit
+2026-10-08 14:05:41.164 GMT [4401] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-10-08 14:05:41.170 GMT [4401] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5433"
+2026-10-08 14:05:41.178 GMT [4401] LOG:  could not open file "/var/lib/postgresql/18/recovery/pg_hba.conf": Permission denied
+2026-10-08 14:05:41.178 GMT [4401] FATAL:  could not load /var/lib/postgresql/18/recovery/pg_hba.conf
+2026-10-08 14:05:41.181 GMT [4401] LOG:  database system is shut down
+moses@DESKTOP-32CUJS9:~$ sudo chown postgres:postgres /var/lib/postgresql/18/recovery/pg_hba.conf
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres /usr/lib/postgresql/18/bin/pg_ctl -D /var/lib/postgresql/18/recovery -l /var/lib/postgresql/18/recovery.log start
+waiting for server to start..... stopped waiting
+pg_ctl: could not start server
+Examine the log output.
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres /usr/lib/postgresql/18/bin/pg_ctl -D /var/lib/postgresql/18/recovery -l /var/lib/postgresql/18/recovery.log start
+waiting for server to start.... stopped waiting
+pg_ctl: could not start server
+Examine the log output.
+moses@DESKTOP-32CUJS9:~$ sudo tail -12 /var/lib/postgresql/18/recovery.log
+2026-10-08 14:07:00.716 GMT [4514] LOG:  restored log file "000000010000000000000004" from archive
+cp: cannot stat '/var/backups/postgresql/wal/000000010000000000000005': No such file or directory
+2026-10-08 14:07:00.739 GMT [4514] LOG:  consistent recovery state reached at 0/3000120
+2026-10-08 14:07:00.740 GMT [4508] LOG:  database system is ready to accept read-only connections
+cp: cannot stat '/var/backups/postgresql/wal/000000010000000000000005': No such file or directory
+2026-10-08 14:07:00.744 GMT [4514] LOG:  redo done at 0/4000268 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.04 s
+2026-10-08 14:07:00.744 GMT [4514] LOG:  last completed transaction was at log time 2026-10-08 13:56:31.627732+00
+2026-10-08 14:07:00.744 GMT [4514] FATAL:  recovery ended before configured recovery target was reached
+2026-10-08 14:07:00.747 GMT [4508] LOG:  startup process (PID 4514) exited with exit code 1
+2026-10-08 14:07:00.747 GMT [4508] LOG:  terminating any other active server processes
+2026-10-08 14:07:00.748 GMT [4508] LOG:  shutting down due to startup process failure
+2026-10-08 14:07:00.750 GMT [4508] LOG:  database system is shut down
+moses@DESKTOP-32CUJS9:~$ sudo sed -i "s/^recovery_target_time = .*/recovery_target_time = '2026-10-08 13:56:32+00'/" /var/lib/postgresql/18/recovery/postgresql.conf
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres /usr/lib/postgresql/18/bin/pg_ctl -D /var/lib/postgresql/18/recovery -l /var/lib/postgresql/18/recovery.log start
+waiting for server to start.... done
+server started
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres psql -p 5433 -d bootcamp -c "SELECT * FROM students;"
+psql: error: connection to server on socket "/var/run/postgresql/.s.PGSQL.5433" failed: No such file or directory
+        Is the server running locally and accepting connections on that socket?
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres psql -p 5433 -d bootcamp -c "SELECT * FROM students;"
+psql: error: connection to server on socket "/var/run/postgresql/.s.PGSQL.5433" failed: No such file or directory
+        Is the server running locally and accepting connections on that socket?
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres psql -p 5433 -d bootcamp -c "SELECT * FROM students;"
+psql: error: connection to server on socket "/var/run/postgresql/.s.PGSQL.5433" failed: No such file or directory
+        Is the server running locally and accepting connections on that socket?
+moses@DESKTOP-32CUJS9:~$ sudo tail -15 /var/lib/postgresql/18/recovery.log
+2026-10-08 14:08:31.132 GMT [4578] LOG:  restored log file "000000010000000000000003" from archive
+2026-10-08 14:08:31.157 GMT [4578] LOG:  starting point-in-time recovery to 2026-10-08 13:56:32+00
+2026-10-08 14:08:31.165 GMT [4578] LOG:  redo starts at 0/3000028
+2026-10-08 14:08:31.226 GMT [4578] LOG:  restored log file "000000010000000000000004" from archive
+cp: cannot stat '/var/backups/postgresql/wal/000000010000000000000005': No such file or directory
+2026-10-08 14:08:31.252 GMT [4578] LOG:  consistent recovery state reached at 0/3000120
+2026-10-08 14:08:31.252 GMT [4572] LOG:  database system is ready to accept read-only connections
+cp: cannot stat '/var/backups/postgresql/wal/000000010000000000000005': No such file or directory
+2026-10-08 14:08:31.258 GMT [4578] LOG:  redo done at 0/4000268 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.09 s
+2026-10-08 14:08:31.258 GMT [4578] LOG:  last completed transaction was at log time 2026-10-08 13:56:31.627732+00
+2026-10-08 14:08:31.258 GMT [4578] FATAL:  recovery ended before configured recovery target was reached
+2026-10-08 14:08:31.263 GMT [4572] LOG:  startup process (PID 4578) exited with exit code 1
+2026-10-08 14:08:31.263 GMT [4572] LOG:  terminating any other active server processes
+2026-10-08 14:08:31.266 GMT [4572] LOG:  shutting down due to startup process failure
+2026-10-08 14:08:31.270 GMT [4572] LOG:  database system is shut down
+moses@DESKTOP-32CUJS9:~$ sudo sed -i "s/^recovery_target_time = .*/recovery_target_time = '2026-10-08 13:56:31.627732+00'/" /var/lib/postgresql/18/recovery/postgresql.conf
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres /usr/lib/postgresql/18/bin/pg_ctl -D /var/lib/postgresql/18/recovery -l /var/lib/postgresql/18/recovery.log start
+waiting for server to start.... stopped waiting
+pg_ctl: could not start server
+Examine the log output.
+moses@DESKTOP-32CUJS9:~$ sudo tail -15 /var/lib/postgresql/18/recovery.log
+2026-10-08 14:10:30.109 GMT [4687] LOG:  restored log file "000000010000000000000003" from archive
+2026-10-08 14:10:30.132 GMT [4687] LOG:  starting point-in-time recovery to 2026-10-08 13:56:31.627732+00
+2026-10-08 14:10:30.139 GMT [4687] LOG:  redo starts at 0/3000028
+2026-10-08 14:10:30.171 GMT [4687] LOG:  restored log file "000000010000000000000004" from archive
+cp: cannot stat '/var/backups/postgresql/wal/000000010000000000000005': No such file or directory
+2026-10-08 14:10:30.199 GMT [4687] LOG:  consistent recovery state reached at 0/3000120
+2026-10-08 14:10:30.199 GMT [4681] LOG:  database system is ready to accept read-only connections
+cp: cannot stat '/var/backups/postgresql/wal/000000010000000000000005': No such file or directory
+2026-10-08 14:10:30.205 GMT [4687] LOG:  redo done at 0/4000268 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.06 s
+2026-10-08 14:10:30.205 GMT [4687] LOG:  last completed transaction was at log time 2026-10-08 13:56:31.627732+00
+2026-10-08 14:10:30.205 GMT [4687] FATAL:  recovery ended before configured recovery target was reached
+2026-10-08 14:10:30.210 GMT [4681] LOG:  startup process (PID 4687) exited with exit code 1
+2026-10-08 14:10:30.210 GMT [4681] LOG:  terminating any other active server processes
+2026-10-08 14:10:30.211 GMT [4681] LOG:  shutting down due to startup process failure
+2026-10-08 14:10:30.215 GMT [4681] LOG:  database system is shut down
+moses@DESKTOP-32CUJS9:~$ sudo sed -i "/^recovery_target_time =/d" /var/lib/postgresql/18/recovery/postgresql.conf
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres /usr/lib/postgresql/18/bin/pg_ctl -D /var/lib/postgresql/18/recovery -l /var/lib/postgresql/18/recovery.log start
+waiting for server to start.... done
+server started
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres psql -p 5433 -d bootcamp -c "SELECT * FROM students;"
+ id | name  |    level
+----+-------+--------------
+  1 | Alice | beginner
+  2 | Bob   | intermediate
+(2 rows)
+
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres /usr/lib/postgresql/18/bin/pg_ctl -D /var/lib/postgresql/18/recovery stop
+waiting for server to shut down.... done
+server stopped
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres psql -d bootcamp -c "CREATE ROLE replicator WITH REPLICATION LOGIN PASSWORD 'choose-your-own-private-password';"
+CREATE ROLE
+moses@DESKTOP-32CUJS9:~$ sudo nano /etc/postgresql/18/main/pg_hba.conf
+
+
+
+moses@DESKTOP-32CUJS9:~$ sudo nano /etc/postgresql/18/main/pg_hba.conf
+moses@DESKTOP-32CUJS9:~$ sudo systemctl reload postgresql
+moses@DESKTOP-32CUJS9:~$ sudo rm -rf /var/lib/postgresql/18/standby
+sudo mkdir -p /var/lib/postgresql/18/standby
+sudo chown postgres:postgres /var/lib/postgresql/18/standby
+sudo chmod 700 /var/lib/postgresql/18/standby
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres pg_basebackup -h 127.0.0.1 -U replicator -D /var/lib/postgresql/18/standby -R -P
+Password:
+pg_basebackup: error: connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "replicator"
+connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "replicator"
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres psql -d bootcamp -c "ALTER ROLE replicator PASSWORD 'NewPrivatePassword123!';"
+-bash: !': event not found
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres psql -d bootcamp -c "ALTER ROLE replicator PASSWORD 'NewPrivatePassword123!';"
+-bash: !': event not found
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres psql -d bootcamp -c "ALTER ROLE replicator PASSWORD 'Replicator2026';"
+ALTER ROLE
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres psql -d bootcamp -c "ALTER ROLE replicator PASSWORD 'Replicator2026';"
+ALTER ROLE
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres pg_basebackup -h 127.0.0.1 -U replicator -D /var/lib/postgresql/18/standby -R -P
+Password:
+pg_basebackup: error: connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "replicator"
+connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "replicator"
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres psql -d bootcamp -c "\du replicator"
+      List of roles
+ Role name  | Attributes
+------------+-------------
+ replicator | Replication
+
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres psql -d bootcamp -c "ALTER ROLE replicator WITH LOGIN PASSWORD 'Replicator2026';"
+ALTER ROLE
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres psql -d bootcamp -c "\du replicator"
+      List of roles
+ Role name  | Attributes
+------------+-------------
+ replicator | Replication
+
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres psql -d bootcamp -c "\du replicator"
+      List of roles
+ Role name  | Attributes
+------------+-------------
+ replicator | Replication
+
+moses@DESKTOP-32CUJS9:~$ PGPASSWORD='Replicator2026' psql -h 127.0.0.1 -U replicator -d postgres -c "SELECT current_user;"
+ current_user
+--------------
+ replicator
+(1 row)
+
+moses@DESKTOP-32CUJS9:~$ PGPASSWORD='Replicator2026' sudo -u postgres pg_basebackup -h 127.0.0.1 -U replicator -D /var/lib/postgresql/18/standby -R -P
+Password:
+pg_basebackup: error: connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "replicator"
+connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "replicator"
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres env PGPASSWORD='Replicator2026' pg_basebackup -h 127.0.0.1 -U replicator -D /var/lib/postgresql/18/standby -R -P
+39349/39349 kB (100%), 1/1 tablespace
+moses@DESKTOP-32CUJS9:~$ sudo sed -i '/^port =/d' /var/lib/postgresql/18/standby/postgresql.conf
+sudo sed -i '1i port = 5433' /var/lib/postgresql/18/standby/postgresql.conf
+\\sed: can't read /var/lib/postgresql/18/standby/postgresql.conf: No such file or directory
+sed: can't read /var/lib/postgresql/18/standby/postgresql.conf: No such file or directory
+moses@DESKTOP-32CUJS9:~$ ls -la /var/lib/postgresql/18/standby | head -20
+ls: cannot open directory '/var/lib/postgresql/18/standby': Permission denied
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres ls -la /var/lib/postgresql/18/standby | head -20
+total 312
+drwx------ 19 postgres postgres   4096 Oct  8 17:30 .
+drwxr-xr-x  5 postgres postgres   4096 Oct  8 17:21 ..
+-rw-------  1 postgres postgres      3 Oct  8 17:30 PG_VERSION
+-rw-------  1 postgres postgres    225 Oct  8 17:30 backup_label
+-rw-------  1 postgres postgres 226221 Oct  8 17:30 backup_manifest
+drwx------  7 postgres postgres   4096 Oct  8 17:30 base
+drwx------  2 postgres postgres   4096 Oct  8 17:30 global
+drwx------  2 postgres postgres   4096 Oct  8 17:30 pg_commit_ts
+drwx------  2 postgres postgres   4096 Oct  8 17:30 pg_dynshmem
+drwx------  4 postgres postgres   4096 Oct  8 17:30 pg_logical
+drwx------  4 postgres postgres   4096 Oct  8 17:30 pg_multixact
+drwx------  2 postgres postgres   4096 Oct  8 17:30 pg_notify
+drwx------  2 postgres postgres   4096 Oct  8 17:30 pg_replslot
+drwx------  2 postgres postgres   4096 Oct  8 17:30 pg_serial
+drwx------  2 postgres postgres   4096 Oct  8 17:30 pg_snapshots
+drwx------  2 postgres postgres   4096 Oct  8 17:30 pg_stat
+drwx------  2 postgres postgres   4096 Oct  8 17:30 pg_stat_tmp
+drwx------  2 postgres postgres   4096 Oct  8 17:30 pg_subtrans
+drwx------  2 postgres postgres   4096 Oct  8 17:30 pg_tblspc
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres bash -c "printf 'port = 5433\n' > /var/lib/postgresql/18/standby/postgresql.conf"
+moses@DESKTOP-32CUJS9:~$ sudo cp /etc/postgresql/18/main/postgresql.conf /var/lib/postgresql/18/standby/postgresql.conf
+sudo chown postgres:postgres /var/lib/postgresql/18/standby/postgresql.conf
+moses@DESKTOP-32CUJS9:~$ sudo sed -i '/^[[:space:]]*port[[:space:]]*=/d' /var/lib/postgresql/18/standby/postgresql.conf
+echo "port = 5433" | sudo tee -a /var/lib/postgresql/18/standby/postgresql.conf > /dev/null
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres /usr/lib/postgresql/18/bin/pg_ctl -D /var/lib/postgresql/18/standby -l /var/lib/postgresql/18/standby.log start
+waiting for server to start.... stopped waiting
+pg_ctl: could not start server
+Examine the log output.
+moses@DESKTOP-32CUJS9:~$ sudo tail -30 /var/lib/postgresql/18/standby.log
+2026-10-08 14:33:24.581 GMT [5298] LOG:  could not open configuration directory "/var/lib/postgresql/18/standby/conf.d": No such file or directory
+2026-10-08 14:33:24.581 GMT [5298] FATAL:  configuration file "/var/lib/postgresql/18/standby/postgresql.conf" contains errors
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres mkdir -p /var/lib/postgresql/18/standby/conf.d
+moses@DESKTOP-32CUJS9:~$ sudo -u postgres /usr/lib/postgresql/18/bin/pg_ctl -D /var/lib/postgresql/18/standby -l /var/lib/postgresql/18/standby.log start
+waiting for server to start.... stopped waiting
+pg_ctl: could not start server
+Examine the log output.
+moses@DESKTOP-32CUJS9:~$ sudo tail -20 /var/lib/postgresql/18/standby.log
+2026-10-08 14:33:24.581 GMT [5298] LOG:  could not open configuration directory "/var/lib/postgresql/18/standby/conf.d": No such file or directory
+2026-10-08 14:33:24.581 GMT [5298] FATAL:  configuration file "/var/lib/postgresql/18/standby/postgresql.conf" contains errors
+2026-10-08 17:34:53.079 EAT [5348] FATAL:  lock file "postmaster.pid" already exists
+2026-10-08 17:34:53.079 EAT [5348] HINT:  Is another postmaster (PID 3909) running in data directory "/var/lib/postgresql/18/main"?
+moses@DESKTOP-32CUJS9:~$ sudo grep -n "data_directory" /var/lib/postgresql/18/standby/postgresql.conf
+42:data_directory = '/var/lib/postgresql/18/main'               # use data in another directory
+moses@DESKTOP-32CUJS9:~$ sudo sed -i '/^[[:space:]]*data_directory[[:space:]]*=/d' /var/lib/postgresql/18/standby/postgresql.conf
+moses@DESKTOP-32CUJS9:~$ sudo grep -n "data_directory" /var/lib/postgresql/18/standby/postgresql.conf
+moses@DESKTOP-32CUJS9:~$
